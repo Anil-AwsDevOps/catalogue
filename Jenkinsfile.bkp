@@ -46,19 +46,5 @@ pipeline {
                 }
             }
         }
-
-    // post build
-    post { 
-        always { 
-            echo 'I will always say Hello again!'
-            cleanWs()
-        }
-        success {
-            echo "pipeline success"
-        }
-        failure {
-            echo "pipeline failure"
-        }
     }
-}
 }
